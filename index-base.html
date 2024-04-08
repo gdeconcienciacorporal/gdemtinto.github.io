@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GDE - Trail Running</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="gde1.png" type="image/x-icon">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+ <div class="container">
+        <div class="main-container">
+            <h1>PROGRAMA DE ENTRENAMIENTO GDE -Trail Running</h1>
+            <h2>Alumno: Matías Tinto</h2>
+        </div>
+            <h2>Objetivo mensual: Mejorar la cadencia.  </h2>
+            <h2>Fase: Adquisición. </h2>
+            <h2 id ="pageTitle">Fecha proxima carrera:  </h2> 
+             <p id="result"></p> 
+            <p>Indicaciones previas:  </p>
+        
+        <div class="sub-container">
+            <h4>SEMANA 1</h4>
+            <p>Objetivo semanal:  </p>
+            <div>
+                <h2>Entrada en calor </h2>   <p>4 vueltas x 14 repeticiones </p>
+                <div class="image-container">  
+                    <video width="100%" class="responsive-video" style="margin-top: 35px;" controls>            
+                      <source src="Video1.mp4" type="video/mp4">
+                      </video>
+                  </div>
+                <div class="image-container">  
+                    <video width="100%"  class="responsive-video" style="margin-top: 35px;" controls>
+                      <source src="Video2.mp4" type="video/mp4">
+                      </video>
+                  </div>
+            </div>
+        </div>
+        <div><h2> Running </h2>
+        </div>
+        <div class="column-container 1">           
+            <div class="column">
+                <h3>Dia 1</h3>        
+                <p> Martes: .  </p>
+                <p> - km. </p>
+                <p> - km. </p>
+                <p> - km. </p>
+            </div>
+            <div class="column">
+                <h3>Dia 2</h3>
+                <p> Jueves: . </p>
+                <p> - km. </p>
+                <p> - km. </p>
+                <p> - km. </p>
+            </div>
+            <div class="column">
+                <h3>Dia 3</h3>        
+                <p> Sábado: . </p>
+                <p> - km. </p>
+                <p> - km. </p>
+                <p> - km. </p>
+            </div>
+            <h3>Dia 4</h3>        
+            <p> Martes: .  </p>
+            <p> - km. </p>
+            <p> - km. </p>
+            <p> - km. </p>
+        </div>
+        <div class="column">
+            <h3>Dia 5</h3>
+            <p> Jueves:  </p>
+            <p> - km. </p>
+            <p> - km. </p>
+            <p> - km. </p>            
+        </div>
+        <div class="column">
+            <h3>Dia 6</h3>        
+            <p> Sábado: . </p>
+            <p> - km. </p>
+            <p> - km. </p>
+            <p> - km. </p>
+        </div>
+        </div>
+
+        <div class="small-paragraph-container">
+            <p> Método de recuperación </p>
+            <p> -.</p>     
+        </div>
+                    
+        <div id="column-container 1">
+        <canvas id="myChart-line-1"></canvas>
+        </div>
+        
+    <div class="sub-container">
+        <h4>SEMANA 2 </h4>
+        <p>Objetivo semanal:  </p>
+        <div>
+        <h2>Entrada en calor </h2>   <p> 3 vueltas x 12 repeticiones </p>
+            <div class="image-container">  
+                <video width="100%" class="responsive-video" style="margin-top: 35px;" controls>            
+                <source src="Video3.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="image-container">  
+                <video width="100%"  class="responsive-video" style="margin-top: 35px;" controls>
+                <source src="Video4.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+    </div>
+
+    <div><h2> Running </h2>
+    </div>
+
+    <div class="column-container 1">           
+        <div class="column">
+            <h3>Dia 1</h3>        
+            <p> Martes: .  </p>
+            <p> - km. </p>
+            <p> - km. </p>
+            <p> - km. </p>
+        </div>
+        <div class="column">
+            <h3>Dia 2</h3>
+            <p> Jueves:  </p>
+            <p> - km. </p>
+            <p> - km. </p>
+            <p> - km. </p>            
+        </div>
+        <div class="column">
+            <h3>Dia 3</h3>        
+            <p> Sábado: . </p>
+            <p> - km. </p>
+            <p> - km. </p>
+            <p> - km. </p>
+        </div>
+        <h3>Dia 4</h3>        
+            <p> Martes: .  </p>
+            <p> - km. </p>
+            <p> - km. </p>
+            <p> - km. </p>
+        </div>
+        <div class="column">
+            <h3>Dia 5</h3>
+            <p> Jueves:  </p>
+            <p> - km. </p>
+            <p> - km. </p>
+            <p> - km. </p>            
+        </div>
+        <div class="column">
+            <h3>Dia 6</h3>        
+            <p> Sábado: . </p>
+            <p> - km. </p>
+            <p> - km. </p>
+            <p> - km. </p>
+        </div>
+    </div>
+
+    <div class="small-paragraph-container">
+        <p> Método de recuperación </p>
+        <p> - . </p>     
+    </div>
+          
+    <div id="column-container 2">
+    <canvas id="myChart-line-2"></canvas>
+    </div>      
+
+    <div class="image-container">
+        <img class="imagen-chica" src="logo gde blanco horizontal.png" alt="Logo Gde horizontal">
+      </div>      
+
+</div>
+<script src="script.js"></script>
+</body>
+</html>
