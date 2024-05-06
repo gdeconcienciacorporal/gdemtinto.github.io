@@ -53,6 +53,60 @@ body {
   background-color: #f4f4f4;
   padding: 2em; /* Utiliza em en lugar de píxeles */
 }
+h2 {
+    display: flex;
+    font-size: 1.2em;
+    margin-block-start: 0.3em;
+    margin-block-end: 0.3em;
+    margin-inline-start: 25px;
+    margin-inline-end: 0px;
+    font-family: "Tajawal", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+.tajawal-extralight {
+  font-family: "Tajawal", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.tajawal-light {
+  font-family: "Tajawal", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.tajawal-regular {
+  font-family: "Tajawal", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.tajawal-medium {
+  font-family: "Tajawal", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.tajawal-bold {
+  font-family: "Tajawal", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.tajawal-extrabold {
+  font-family: "Tajawal", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.tajawal-black {
+  font-family: "Tajawal", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+
 
 video {
   width: 100%;
@@ -85,7 +139,7 @@ video {
 }
 
 .sub-container h4 {
-  background-color: #cfba1d;
+  background-color: #c05b2c;
   padding: 2em; /* Utiliza em en lugar de píxeles */
   margin: 0; /* Elimina márgenes predeterminados */
   font-family: 'Arial', sans-serif;
@@ -118,6 +172,6 @@ video {
   object-fit: cover; /* Añadido para ajustar el video en el contenedor sin distorsionarse */
 }
 .imagen-chica {
-  max-width: 50%; /* Puedes ajustar el porcentaje según tus necesidades */
+  max-width: 15%; /* Puedes ajustar el porcentaje según tus necesidades */
   height: auto;
 }

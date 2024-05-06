@@ -1,168 +1,163 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GDE - Trail Running</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="gde1.png" type="image/x-icon">
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script src="script.js" defer></script>
-</head>
-
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title> GDE - Trail Running</title>  
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" href="gde1.png" type="image/x-icon">
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <script src="script.js" defer></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap" rel="stylesheet">
+    </head>
 <body>
- <div class="container">
-        <div class="main-container">
-            <h1>PROGRAMA DE ENTRENAMIENTO GDE -Trail Running</h1>
-            <h2>Alumno: Matías Tinto</h2>
-        </div>
-        <h2>Objetivo mensual: Mejorar la cadencia.  </h2>
-        <h2>Fase: Transferencia. </h2>
-        <h2 id ="pageTitle">Próxima carrera Valholl: 2024/05/10 </h2>  
-            <!-- <p>Indicaciones previas:  </p> -->
-        
-        <div class="sub-container">
-            <h4>SEMANA 3</h4>
-            <p>Objetivo semanal: Mejorar las transiciones. Semana pre competencia. </p>
-            <div>
-                <h2>Entrada en calor </h2>   <p>4 vueltas x 11 repeticiones </p>
-                <div class="image-container">  
-                    <video width="100%" class="responsive-video" style="margin-top: 35px;" controls>            
-                      <source src="Video1.mp4" type="video/mp4">
-                      </video>
-                  </div>
-                <div class="image-container">  
-                    <video width="100%"  class="responsive-video" style="margin-top: 35px;" controls>
-                      <source src="Video2.mp4" type="video/mp4">
-                      </video>
-                  </div>
-            </div>
-        </div>
-        <div><h2> Running </h2>
-        </div>
-        <div class="column-container 1">           
-            <div class="column">
-                <h3>Dia 1</h3>        
-                <p> Miércoles mañana: 4 km de calle en subida, en lo posbile camino a la Iglesia.  </p>
-                <p> Miércoles tarde: 13 km de Trail por Parque de Montaña. </p>
-                <p> - 2 km de menor a mayor. </p>
-                <p> - 3 km de subidas ágiles y bajadas fuertes. </p>
-                <p> - 4 km bajada por calle hasta el golf, subida fuerte hasta Llorón. </p>
-                <p> - 4 km fuerte por senderos bajos. </p>
-            </div>
-            <div class="column">
-                <h3>Dia 2</h3>
-                <p> Jueves mañana: 6 km calle, al mejor ritmo posible, subiendo 3km-bajada 3km. </p>
-            </div>
-            <div class="column">
-                <h3>Dia 3</h3>        
-                <p> Viernes: 6 km pasadas en calle, desde Iglesia hacia el Arco. </p>
-                <p> - 2 km de menor a mayor, bajando 1 desde iglesia a dalvian y subiendo 1. </p>
-                <p> - 2 km </p> 
-                <br> (8x300mx150m), 300 metros subiendo fuerte x 150 metros bajando suave.</br>
-                <br> (6x60mx100m), 60 metros subiendo fuertísimo x 100 metros suave. </br> </p>
-                <p> - 2 km bajada a buen ritmoo. </p>
-            </div>
-            <div class="column">
-                <h3>Dia 4</h3>        
-                <p> Sábado: 17 km Cerro Manos.  </p>
-            </div>
-            <div class="column">
-                <h3>Dia 5</h3>
-                <p> Lunes: 12 km calle suave.  </p>
-                <p> - Objetivo mantener pulsaciones bajas. </p>
-            </div>
-            <div class="column">
-                <h3>Dia 6</h3>        
-                <p> Miércoles: 12 km Series Triangulares Parque de Montaña. </p>
-                <p> - 3 km de menor a mayor. </p>
-                <p> - 2 km (7x300m), subida fuerte por Llorón, parte de adelante, arriba descaso 2'. </p>
-                <p> - 2 km (7x300m), bajamos fuerte, abajo descansamos 2'. </p>
-                <p> - 2 km (7x300m), llano,  pasada fuertisima descanso 2'. </p>
-                <p> - 3 km ágiles con buenas sensaciones. </p>
-            </div>
-        </div>
-
-        <div class="small-paragraph-container">
-            <p> Método de recuperación </p>
-            <p> - duchas frías de 30 segundos a 1 minutos, post entrenos, después del día 1 y 3.</p>     
-        </div>
-                    
-        <div id="column-container 1">
-        <canvas id="myChart-line-1"></canvas>
-        </div>
+<div class="container">
+    <div class="main-container">
+        <h1>PROGRAMA DE ENTRENAMIENTO GDE -Trail Running</h1>
+        <h1>Alumno: Matias Tinto</h1>
+    </div>
+        <h2>OBJETIVO MENSUAL: Mejorar la cadencia. </h2>
+        <h2>FASE: Adquisición. </h2>
+        <h2 id ="pageTitle">PRÓXIMA CARRERA VALHOLL: 2024/05/10 </h2> 
+        <h2 id="result"></h2> 
+        <!-- <p>Indicaciones previas:  </p> -->
         
     <div class="sub-container">
-        <h4>SEMANA 4</h4>
-        <p>Objetivo semanal: Trabajar sobre pequeños fragmentos de carrera.Semana competencia.  </p>
-        <div>
-        <h2>Entrada en calor </h2>   <p> 3 vueltas x 13 repeticiones </p>
-            <div class="image-container">  
-                <video width="100%" class="responsive-video" style="margin-top: 35px;" controls>            
-                <source src="Video3.mp4" type="video/mp4">
+         <h4>SEMANA 5   "COMPETENCIA"
+            <br>Objetivo semanal: Buscar sensaciones de la carrera. </h4>
+        <p>Entrada en calor </p>   
+        <p>4 vueltas x 10 repeticiones </p>
+        <div class="image-container">  
+            <video width="100%" class="responsive-video" style="margin-top: 35px;" controls>            
+                <source src="Video1.mp4" type="video/mp4">
                 </video>
-            </div>
-            <div class="image-container">  
-                <video width="100%"  class="responsive-video" style="margin-top: 35px;" controls>
-                <source src="Video4.mp4" type="video/mp4">
+        </div>
+        <div class="image-container">  
+            <video width="100%"  class="responsive-video" style="margin-top: 35px;" controls>
+                <source src="Video2.mp4" type="video/mp4">
                 </video>
-            </div>
         </div>
     </div>
-
     <div><h2> Running </h2>
     </div>
-
     <div class="column-container 1">           
         <div class="column">
             <h3>Dia 1</h3>        
-            <p> Jueves: 16 km Arco (simulamos salida de carrera 670+).</p>
-            <p> - 4 km fuertes. </p>
-            <p> - 3 km de menos a más. </p>
-            <p> - 4 km fuertes. </p>
-            <p> - 5 km buenas sensaciones. </p>
+            <p> Lunes: 11km trail mixto. </p>
+            <p> -5 km de buenas sensaciones. </p>
+            <p> -4 km pulsaciones bajas. </p>
+            <p> -2 km al mejor ritmo posible. </p> 
         </div>
         <div class="column">
             <h3>Dia 2</h3>
-            <p> Viernes mañana: 5km calle, 2.5km fuertes en subida  x 2.5km  fuerte de bajada. </p>
-            <p> Viernes tarde: 5 km Series Triangulares, Parque de Montaña. </p>
-            <p> - 2 km fuertes. </p>
-            <p> - 3 km (6x150m), subida fuerte por Llorón parte de adelante, arriba descanso 2'. </p>
-            <p> - 3 km (6x150m), bajamos fuerte abajo descansamos 2'. </p>
-            <p> - 3 km (6x200m), llano, pasadas fuertisima descanso 2'. </p>
+            <p> Miércoles: 8 km trail Llorón Parque de Montaña. </p>
+            <p> -2 km ágil por calle bajada por Filo Sur. </p>
+            <p> -2 km subida frente, trekking exigido x grieta hasta cartel, bajada fuerte por calle.  </p>
+            <p> -4 km buenas sensaciones por senderos bajos. </p> 
         </div>
         <div class="column">
             <h3>Dia 3</h3>        
-            <p> Sábado: 13 km Arco. </p>
-            <p> - 1 km fuerte bajada, desde el puesto hacia la Iglesia. </p>
-            <p> - 2 km bajada, 30" agiles x 30" suave. </p>
-            <p> - 5 km subida, 20" agiles x 20" suave. </p>
-            <p> - 5 km buenas sensaciones. </p>
+            <p> Viernes: 13 km calle. </p>
+            <p> -2 km de menor a mayor. </p>
+            <p> -4 km hacemos 2' fuertes x 2' suave. </p>
+            <p> -3 km, 1km fuertisimoss x 1km suave x 1km ágil. </p>
+            <p> -4 km bajas pulsaciones. </p> 
         </div>
         <div class="column">
             <h3>Dia 4</h3>        
-            <p> Lunes: 7 km Parque de Montaña. </p>
-            <p> - 1 km de más a menos. </p>
-            <p> - 2 km fuertes. </p>
-            <p> - 3 km Llorón, por distintas subidas, priorizando subir fuerte. </p>
-            <p> - 1 km suave. </p>            
+            <p> Sábado: 16 km zona de Arco con 1600+. </p>
+            <p> -2 km de menor a mayor buscar empezar subiendo. </p>
+            <p> -3 km énfasis en cadencia paso marcado. </p>
+            <p> -11 km completar el desnivel, AUNQUE NOS PASEMOS DE KM. </p> 
         </div>
         <div class="column">
             <h3>Dia 5</h3>
-            <p> Miércoles: 5 km calle al mejor ritmo posible, comenzando fuerte. </p>
-        </div>
-        <div class="column">
-            <h3>Dia 6</h3>        
-            <p> Jueves: 5 km Trail. </p>
-            <p> - 1 km fuerte. </p>
-            <p> - 3 km, 1km suave - 1km ágil - 1km fuerte. </p>
-            <p> - 1 km al mejor ritmo y sensaciones posibles. </p>
+            <p> Lunes mañana: 5km calle al mejor ritmo posible. </p>
+            <p> Lunes tarde: 9km pasada en calle.</p>
+            <p> -2 km de menor a mayor. </p>
+            <p> -3 km, 6 series x 300m subida fuerte x 300m bajada controlada (calle del Cricyt). </p>
+            <p> -2 km, 6 series x 200m bajada fuerte x 200m subida controlada (calle del Cricyt). </p>
+            <p> -2 km suave a pulsaciones bajas. </p> 
         </div>
     </div>
 
     <div class="small-paragraph-container">
         <p> Método de recuperación </p>
-        <p> - Masaje con rolo, al final de todos los entrenos, sobre el gluteo 2', 3 veces con cada lado hastra el miércoles. </p>     
+        <p> - Masaje con rolo en isquiotibiles 3' por pierna, lo repetimos 2 veces a la pierna que más costo y 1 a la otra. </p>     
+    </div>
+                    
+    <div id="column-container 1">
+        <canvas id="myChart-line-1"></canvas>
+    </div>
+        
+    <div class="sub-container">
+        <h4>SEMANA 6   "POST COMPETENCIA"
+        <br>Objetivo semanal: Conciencia en los pasos de subida y bajada. </h4>
+        <p>Entrada en calor </p>  
+        <p> 3 vueltas x 13 repeticiones </p>
+        <div class="image-container">  
+            <video width="100%" class="responsive-video" style="margin-top: 35px;" controls>            
+            <source src="Video3.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="image-container">  
+            <video width="100%"  class="responsive-video" style="margin-top: 35px;" controls>
+            <source src="Video4.mp4" type="video/mp4">
+            </video>
+        </div>
+    </div>
+
+    <div><h2> Running </h2>
+    </div>
+    <div class="column-container 1">           
+        <div class="column">
+            <h3>Dia 1</h3>        
+            <p> Miércoles: 11 km trail Arco.  </p>
+            <p> -1 km de mayor a menor. </p>
+            <p> -2 km a ritmo ágil subiendo. </p>
+            <p> -3 km, 20" subiendo fuerte x 20"trote suave. </p>
+            <p> -5 km de buenas sensaciones. </p> 
+        </div>
+        <div class="column">
+            <h3>Dia 2</h3>
+            <p> Viernes: 10 km trail, subidas Parque de Montaña.  </p>
+            <p> -2 km de menor a mayor. </p>
+            <p> -3 km subidas al Llorón x calle filo sur bajamos por adelante o x grieta.  </p>
+            <p> -2 km subidas fuerte cerros bajos camino al Frías bajadas controladas. </p>
+            <p> -3 km suave. </p> 
+        </div>
+        <div class="column">
+            <h3>Dia 3</h3>        
+            <p> Sábado: 14km trail zona de Arco.  </p>
+            <p> -2 km fuertes. </p>
+            <p> -3 km subimos 300m fuerte x 50m bajamos suave. </p>
+            <p> -4 km trekking exigido. </p> 
+            <p> -5 km al mejor ritmo posible, donde quede. </p> 
+        </div>
+        <div class="column">
+            <h3>Dia 4</h3>        
+            <p> Lunes: 14 km trail mixto Parque de Montaña + Parque San Martín.  </p>
+            <p> -3 km de menos a más. </p>
+            <p> -5 km meter 3 subidas al Llorón, por distintas partes, bajada suelta (por adelante siempre). </p>
+            <p> -6 km calle 3km ágiles x 3km fuertes (San Francisco + Golf + Cricyt). </p> 
+        </div>
+        <div class="column">
+            <h3>Dia 5</h3>
+            <p> Miércoles: 18 km Arco subida. </p>
+            <p> -2 km de menor a mayor, río seco hacia la entrada. </p>
+            <p> -3 km, 2' trote continuos x 3' trekking exigido, por el filo hacia las antenas. </p>
+            <p> -4 km, 20" suave x 20"fuerte. </p>
+            <p> -7 km bajas pulsaciones. </p>
+            <p> -2 km fuertes. </p> 
+        </div>
+    </div>
+
+    <div class="small-paragraph-container">
+        <p> Método de recuperación </p>
+        <p> - Masaje con rolo en tensores de la fasia lata, 2' por pierna, lo repetimos 3 veces en la pierna que más nos costo y 1 al otro.. </p>     
     </div>
           
     <div id="column-container 2">
@@ -170,7 +165,7 @@
     </div>      
 
     <div class="image-container">
-        <img class="imagen-chica" src="logo gde blanco horizontal.png" alt="Logo Gde horizontal">
+        <img class="imagen-chica" src="Montaña blanco.png" alt="Montaña Blanco">
       </div>      
 
 </div>
